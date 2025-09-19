@@ -1,0 +1,17 @@
+body {
+  background-color:rgb(255, 255, 233)
+}
+
+form {
+  background: #d8b266;
+  border: 2px solid rgba(246, 226, 175, 1);
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
