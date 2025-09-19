@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logout</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <script>
+    localStorage.removeItem("isLoggedIn"); 
+    Swal.fire({
+      icon: "success",
+      title: "Logged out",
+      text: "You have successfully logged out!",
+      confirmButtonText: "OK"
+    }).then(() => {
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
